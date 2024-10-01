@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCOE3</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Research on monocular depth estimation and 
+        image refocusing
+        </h1>
+        <blockquote><h2 style="text-align: center;">Sudarshan Gampa1
+            , Varun Andharia2
+            , Mr.Ashraf Siddiqui3 
+        </h2></blockquote>
+        <h3 style="text-align: center;">Department of Computer Engineering, Universal College of Engineering,
+            Vasai, Maharashtra, India</h3>
+    <hr>
+    <br>
+    <b><big>Abstract: </big></b><q> In this paper we use a monocular depth estimation method to estimate depth in a given input image.This is performed by 
+        using a unsupervised deep learning model to estimate depth and get the depth image of the given input image using this depth image 
+        we are going to perform image processing on the input image to give bokeh effect to the input image (portrait image) this is one 
+        application of the depth information we get from the depth map . Main aim is to use the depth map which contains the depth 
+        information or the information of the object distance from the camera lens, to get a 3d representation of the image and perform 
+        various applications using depth information.        
+        </q><br><br>
+
+        <p><b>Keywords</b> – Depth estimation, , Machine Learning, Deep Learning, Portrait image , Bokeh Effect, Image processing</p>
+
+        <ol>
+            <dt><li><b><big>INTRODUCTIONS:</big></b></li></dt>
+            <p>We will be taking a single color image as an input in our model to get a depth image so that the process of refocusing to get the 
+                output image as portrait image.
+                Estimating depth is crucial step towards inferring scene geometry from 2D images.The goal is to predict the depth value of each 
+                pixel in a given only a single RGB image as in input.Since the same input image can project to multiple plausible depth 
+                estimation.There are many supervised learning methods to predict depth,this supervised learning [1] method use partial ground 
+                truth depth as an input to the model while training, this ground truth depth is hard to obtain because of costly hardware.To overcome 
+                this we have used an unsupervised monocular depth estimation method which only uses two input images while training.
+                </p>
+                <img src="Image UCe1.png" height="200" width="400" alt="not seen">
+                                            <figcaption>Fig:Image Difference</figcaption><br><br>
+                <p>The applications of depth estimation are self-driving car ,parking car sensors, image-editing, AR-composting,etc, The application 
+                    of depth estimation in our project is to get a portrait image by our method where we will take an input image to get a depth image 
+                    and then use it for performing the refocusing by the bokeh effect.
+                    </p>
+
+                    <dt><li><b><big>METHODOLOGY:</big></b></li></dt>
+                    <p>The first part of this thesis is mostly a literary review of recent and relevant research in the field of computer vision, specifically 
+                        the task of depth estimation[1][2] from both stereo and single images[1][2]. All emphasis was made on studies and research papers 
+                        that treated this problem with machine or deep learning. We have used the method and model based on paper Digging Into SelfSupervised Monocular Depth Estimation.[2]. They train a machine learning model to generate a depth map using just a single 
+                        image.The link to their Paper is.[2].
+                        </p>
+                        <p>Our Method consists of the following steps:</p>
+                        <p>1. We will select an input image for performing the refocusing or applying the bokeh effect[8] to the input image.</p>
+                        <p>2. Input image will be used to predict the depth image and this depth image will be used in the image processing task to 
+                            apply the bokeh effect[8] to the input image.</p>
+
+                            <dt><li><b><big>WORKFLOW OF PROJECT:</big></b></li></dt>
+                            <p>The Design of the Gui is to first take the input image then use the monodepth2 [2] model to infer a dense
+                                depth image[1][2][3][4] and save it.After that use this depth image and its npy file to perform image processing and apply bokeh 
+                                effect to the input image and get the resultant portrait image.
+                                </p>
+                                <p>The operations are divided into 3 parts:
+                                </p>
+                                <p>1. Selecting the input Image from the image folder.
+                                </p>
+                                <p>2. Then select the continue button which will use the model to predict the depth map and save the depth map in the folder.</p>
+                                <p>3.Clicking a point on the input image so that bokeh effect can be applied to the pixel surrounding the point or object . Finally the 
+                                    portrait image is 
+                                    Displayed and saved in the folder.</p>
+
+                                    <img src="image UCe2.png" height="200" width="400" alt="not seen">
+                                            <figcaption>Fig:Image Difference</figcaption><br><br>
+
+                                            <dt><li><b><big>EXPERIMENTAL STUDY
+                                                :</big></b></li></dt>
+                                                <p>In this, the application will be tested with different inputs to check whether the platform provides desired and relevant results as 
+                                                    expected to happen</p>
+                                                    <p>The table below shows the results as follows :
+                                                    </p>
+                                                    <img src="Image table.png" height="200" width="400" alt="not seen">
+                                                    <figcaption>Fig:Image Table</figcaption><br><br>
+
+                                                    <dt><li><b><big> CONCLUSIONS
+                                                        :</big></b></li></dt>
+                                                        <p>Thus with the help of all these unsupervised learning based methods[1][2][3][4] our main aim is to predict depth and use the most 
+                                                            accurate algorithm Instead of using aligned ground truth depth data, which is both rare and costly for supervised algorithms and 
+                                                            use this depth information [2]in many applications in real time Image processing , scene reconstruction , self driving cars, AR 
+                                                            composition and many other applications.
+                                                            </p><br><br>
+
+                                                            <b><big>ACKNOWLEDGEMENT</big></b>
+                                                            <p>Our model is based on the paper“Digging Into Self-Supervised Monocular Depth Estimation, by C. Godard, O. Mac Aodha, M. 
+                                                                Firman, G. Brostow, arXiv:1806.01260”. We thank the above authors for providing us with their amazing model and knowledge to 
+                                                                use in our paper.</p>
+
+                                                                <b><big>REFERENCES</big></b>
+                                                                <p>[1] Clement Godard ,Oisin Mac Aodha, Gabriel J. Brostow, Unsupervised Monocular Depth Estimation with Left-Right 
+                                                                    Consistency, source https://arxiv.org/abs/1609.03677 </p>
+                                                                    <p>[2] Clément Godard, Oisin Mac Aodha, Michael Firman, Gabriel Brostow,Digging Into Self-Supervised Monocular Depth 
+                                                                        Estimation https://arxiv.org/abs/1806.01260</p>
+                                                                        <p>[3] Xiaohan Tu; Cheng Xu; Siping Liu; Guoqi Xie; Renfa , Real-Time Depth Estimation with an Optimized Encoder-Decoder 
+                                                                            Architecture on Embedded Devices
+                                                                            Lihttps://ieeexplore.ieee.org/abstract/document/8855335</p>
+                                                                            <p>[4] KITTI Single Depth Evaluation Server. http://www.cvlibs.net/datasets/kitti/eval depth.php? benchmark=depth prediction. 
+                                                                                2017.</p>
+                                                                                <p>[5] Clement Godard, Oisin Mac Aodha, and Gabriel J Bros- ´ tow. Unsupervised monocular depth estimation with left right 
+                                                                                    consistency. In CVPR, 2017.</p>
+
+
+
+
+
+
+
+
+        </ol>
+    
+    <h4>more about topic</h4> <br>
+    
+    <details>
+        <h3>
+            <summary>Summary</summary>
+        </h3><br>
+        <p>summary of paper in our words</p>
+    </details>
+    <br>
+    <style>
+        figcaption{
+            font-style: italic;
+        }
+        blockquote {
+        font-size: 15px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: -0.4px;
+        color: #4FE2C1;
+        padding: 0 0 0 20px;
+        border-left: 2px solid #4FE2C1;
+        margin: 0;
+        position: relative;
+    }
+    </style>
+
+
+</body>
+
+</html>

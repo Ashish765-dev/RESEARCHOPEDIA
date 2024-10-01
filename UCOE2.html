@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCOE 2</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Predicting the Trends of Quality
+        Oriented Jobs</h1>
+
+        <blockquote><h2 style="text-align: center;">Sahil Yadav1
+            , Suyrakant Singh2
+            , Dev Patel3
+            , Mrs.Silviya D’Monte4
+        </h2></blockquote>
+        <h3 style="text-align: center;">Department of Computer Engineering, Universal College of Engineering, Vasai, Maharashtra, India</h3>
+    <hr>
+    <br>
+    <b><big>Abstract: </big></b><q> In this paper, it focusses on studying the 
+        job prediction using different deep neural 
+        network models. To predict the future jobs based 
+        on Dataset which contains the previous years job 
+        opportunities, locations, packages, eligibility 
+        criteria and sectors. It focuses that in future 
+        which Technology place a major role to get the 
+        quality jobs in several sectors. And also analyse 
+        the required knowledge to get a qualified job
+        based on eligibility. In future how the graduates 
+        get jobs based on their skills with the help of the 
+        dataset which collects from the different job sites 
+        like first Naukri, LinkedIn, Monster etc. The 
+        trends of quality-oriented jobs can be analysed
+        and easily predict the future job opportunities by 
+        applying machine learning technique
+        </q><br><br>
+        <p><b>Keywords</b> – Job Prediction, qualities, trends, 
+            recommendation, location.</p>
+
+            <ol>
+                <dt><li><b><big>INTRODUCTIONS:</big></b></li></dt>
+                <p>In recent years, the strong 
+                    development of Information Technology (IT) has 
+                    led to a variety of job positions as well as the 
+                    requirements of each type of IT job. With the 
+                    diversity, students or job seekers find the job 
+                    suitable for their knowledge and skills accumulated 
+                    at the school or in the process of working are 
+                    challenging. Also, the recruitment company must 
+                    filter the profiles of the candidates manually to 
+                    choose the people suitable for the position they are 
+                    recruiting, causing a lot of time while the number of 
+                    applications could be increased to hundreds or 
+                    thousands. Therefore, we would like to study the 
+                    task of IT job prediction to help them effectively 
+                    address the aforementioned issues. Job prediction is 
+                    a classification task using several techniques in 
+                    machine learning and natural language processing 
+                    trying to predict a job based on job descriptions 
+                    including job requirements, knowledge, skills, 
+                    interests, etc. In this paper, we focus on studying on 
+                    job descriptions collected specifically from the 
+                    online finding-job sites. In particular, we are 
+                    interested in IT job descriptions. The task is 
+                    presented as follows. The study will answer the 
+                    questions, first, how data mining technique provides 
+                    better classification in predicting the employability 
+                    of IT graduates? Second, how the data model can be 
+                    extracted to predict the employability of IT 
+                    graduates? Lastly, how are attributes be identified to 
+                    have a significant correlation to Information 
+                    Technology employability?</p>
+
+                    <p>Input: Given an IT job description collected 
+                        from the online finding-job sites. </p>
+
+                        <p>Output: A predicted job title for this 
+                            description.
+                            </p>
+
+                            <dt><li><b><big>LITERATURE SURVEY:</big></b></li></dt>
+                            <p>[1] S Siddaraju, M Sivaranjani, V Sivasakthi, S 
+                                Tamilselvan in 2020 suggested using KNN 
+                                algorithm for Predicting the Trends of QualityOriented Jobs to help and prepare for future jobs.</p>
+                                <p>[2] Sara Mustafa, Iman Elghandour, Mohamed A. 
+                                    Ismail in 2018 suggested three main approaches 
+                                    have been employed to predict the execution time of 
+                                    queries in their paper ‘A Machine Learning 
+                                    Approach for Predicting Execution Time of Spark 
+                                    Jobs’, it supports execution of various types of 
+                                    workloads.</p>
+                                    <p>[3] Shreyas Harinath, Aksha Prasad, Suma H S, 
+                                        Suraksha A, Tojo Mathew in 2019 suggested 
+                                        predicting student placement status using two 
+                                        attributes, areas and CGPA results in their paper 
+                                        ‘Student Placement Prediction Using Machine 
+                                        Learning’.
+                                        </p>
+
+                                        <p>[4] K. Sripath Roy, K. Roopkanth, V. Uday Teja, V. 
+                                            Bhavana, J. Priyanka published a paper, ‘Student 
+                                            Career Prediction Using Advanced Machine 
+                                            Learning Techniques’ in 2018. This paper mainly 
+                                            concentrates on the career area prediction of 
+                                            computer science domain candidates.</p>
+                                            <p>[5] Kachi Anvesh, B. Satya Prasad, V. Venkata Sai 
+                                                Rama Laxman, B. Satya Narayana in 2019 
+                                                published their idea ‘Automatic Student Analysis 
+                                                and Placement Prediction using Advanced Machine 
+                                                Learning Algorithms’, it is an automatic prediction
+                                                based on the student’s qualifications. The students 
+                                                can evaluate themselves about their suitable job role.
+                                                </p>
+
+                                                <dt><li><b><big>PROPOSED SYSTEM
+                                                    :</big></b></li></dt>
+                                                    <p>This illustrates that predict the job 
+                                                        opportunities, Vacancies in the upcoming years 
+                                                        based on the dataset collects from the different job 
+                                                        sites or job portals like linked in, monster, first 
+                                                        Naukri etc. The dataset contains the details of 
+                                                        maximum 10000 companies. All the data are 
+                                                        classified based on the company and job roles. To 
+                                                        predict the scope in a job after 5 years. It shows the 
+                                                        level of vacancies and opportunities in a visual 
+                                                        format This with low, moderate and high.</p>
+                                                        <p>The ability to predict the future jobs for
+                                                            the future generation students based on their skills, 
+                                                            eligibility and their graduations.
+                                                            </p>
+
+                                                            <dt><li><b><big>DESCRIPTION
+                                                                :</big></b></li></dt>
+                                                                <p>The first step is to collect the dataset from 
+                                                                    the various job sites. All the details are gathered and 
+                                                                    pre-processed. Dataset are separated based on the 
+                                                                    companies. Then the model has been created and
+                                                                    built with the help of Data Mining technique. The 
+                                                                    model is used to predict the future jobs after 5 years. 
+                                                                    The inputs given to the built model are job title, 
+                                                                    current vacancies, layoff percentage, new job 
+                                                                    opportunities of various companies. Before deploy 
+                                                                    the model ensures that the model treats all the groups 
+                                                                    fairly. Deploy the model and set the prediction 
+                                                                    process. The output of the prediction process is the 
+                                                                    job opportunities and shows the level of vacancies 
+                                                                    with low, moderate and high.</p>
+                                                                    <p>Recent years have also seen major increase 
+                                                                        in the study with regards with prediction and 
+                                                                        discovery with models using different types of EDM 
+                                                                        methods. Classification is one of the several data 
+                                                                        mining techniques that has become an interesting 
+                                                                        topic to the researchers because of its accuracy and 
+                                                                        efficiency for classifying the data for knowledge 
+                                                                        discovery. Research about student performance 
+                                                                        prediction was recently conducted [6] using 
+                                                                        different classification data mining model such as 
+                                                                        Decision Tree, Naïve Bayes and Multilayer 
+                                                                        Perception.</p>
+                                                                        <img src="Build model.png" height="200" width="400" alt="not seen">
+                                            <figcaption>Fig:Build model</figcaption><br><br>
+
+                                            <dt><li><b><big>METHODOLOGIES :</big></b></li></dt>
+                                            <p>Asp.Net-.NET is a free, cross-platform, 
+                                                open-source developer platform for building many 
+                                                different types of applications. With .NET you can 
+                                                use multiple languages, editors and built-in support 
+                                                for dependency injection allow you to build 
+                                                applications that are easier to test and maintain.
+                                                SQL server- Microsoft server is a relational 
+                                                database management system developed by 
+Microsoft. As a database server, it is a software 
+product with the primary function of and retrieving 
+data as requested by other software applicationswhich may run either on the same computer or on 
+another computer across a network.</p>
+<p>Dataset- In this paper, we use the dataset 
+    for IT job prediction. This dataset consists of 
+    maximum 10,000 companies’ detail which contains 
+    job titles, current vacancies, layoff percentage, new 
+    job opportunities. And also contains the eligibility 
+    criteria, packages based on the job roles and the 
+    previous year data which are collected from the 
+    different job sites. The dataset should be balanced 
+    one. The process of collecting the dataset is a 
+    difficult task because the dataset should be clear to 
+    run the built model.
+    </p>
+
+    <p>Experiments- To predict the qualityoriented jobs based on the locations, sectors and 
+        eligibility criteria. This includes to predict the future 
+        trending technologies and required knowledge for 
+        the particular jobs, to predict that how many of them 
+        have jobs and how many of them doesn’t get the 
+        jobs, in future how the graduates get jobs based on 
+        their skills with the help of the dataset which collects 
+        from the different job sites like first Naukri, 
+        LinkedIn, Monster etc. An Overview is explained in 
+        figure below. The process of compiling the data 
+        requires an understanding of what input given to the 
+        modal. The modal has been tested repeatedly and the 
+        errors are identified. The identified errors were 
+        cleaned and the model has ready to deploy. The 
+        predicting process has been started and the result 
+        will be visualized based on the given input. The 
+        performance of the accurate result is based on the 
+        clear dataset and perfect inputs.</p>
+        <img src="data uce2.png" height="200" width="400" alt="not seen">
+                                            <figcaption>Fig:Data model</figcaption><br><br>
+
+                                            <dt><li><b><big>CONCLUSION
+                                                :</big></b></li></dt>
+                                                <p>The research on Predicting the outcomes for 
+                                                    future job opportunities is complex and more 
+                                                    amount of data requires from the various job sites 
+                                                    and companies. From the experimental results and 
+                                                    the model built, it can be proposed that the algorithm 
+                                                    is a simple and effective model and we proved that
+                                                    this method is the best performance for predicting 
+                                                    the future job opportunities. It achieved that the best 
+                                                    dataset was used to predict.
+                                                    </p>
+                                                    <dt><li><b><big>REFERENCES
+                                                        :</big></b></li></dt>
+                                                        <p>[1]. Y. Kim, “Convolutional neural networks for 
+                                                            sentence classification,” arXiv Prepr. 
+                                                            arXiv1408.5882, 2014</p>
+                                                            <p>[2]. B. Pang and L. Lee, “Seeing stars: Exploiting 
+                                                                class relationships for sentiment categorization 
+                                                                with respect to rating scales,” in Proceedings of the 
+                                                                43rd annual meeting on association for 
+                                                                computational linguistics, 2005, pp. 115–124.</p>
+                                                                <p>[3] B. Jantawan & C. F. Tsai. A Classification 
+                                                                    Model on Graduate Employability Using Bayesian 
+                                                                    Approaches: A Comparison. International Journal 
+                                                                    of Innovative Research in Computer and 
+                                                                    Communication Engineering, pp. 4584 - 4588. 
+                                                                    2015.
+                                                                    </p>
+                                                                    <p>[4] M. A. Sapaat., A. Mustapha, J. Ahmad, K. 
+                                                                        Chamili, & R. A. Muhamad. Data Mining 
+                                                                        Approach to Construct Graduates Employability 
+                                                                        Model in Malaysia. International Journal on New 
+                                                                        Computer Architectures and Their Applications, 
+                                                                        pp.1086-1098. 2011 </p>
+                                                                        <p>[5] J. Laraya The Employability of Graduates: A 
+                                                                            Determinant to Full Employment. Country Reports 
+                                                                            - Enhancement of Graduate Employment ASAIHL, 
+                                                                            pp. 19-25. 2009</p>
+
+
+
+
+
+
+
+            </ol>
+    
+    <h4>more about topic</h4> <br>
+    
+    <details>
+        <h3>
+            <summary>Summary</summary>
+        </h3><br>
+        <p>summary of paper in our words</p>
+    </details>
+    <br>
+
+<style>
+    figcaption{
+        font-style: italic;
+    }
+    blockquote {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.32;
+    letter-spacing: -0.4px;
+    color: #4FE2C1;
+    padding: 0 0 0 20px;
+    border-left: 2px solid #4FE2C1;
+    margin: 0;
+    position: relative;
+}
+</style>
+
+</body>
+
+</html>
